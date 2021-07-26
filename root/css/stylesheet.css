@@ -1,0 +1,121 @@
+#loading{
+    width: 1rem;
+    height: 1rem;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid black;
+    border-radius: 100%;
+    margin: 5px;
+    padding: auto;
+    visibility: hidden;
+    animation: spin 1s infinite linear;
+}
+
+#loading.display {
+    visibility: visible;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#stockWrapper{
+    border:2px solid grey;
+    border-radius: 10px;
+    margin: 30px auto; 
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: 'Baloo 2', cursive;
+    width: 50%;
+    padding: 30px 30px 30px;
+    box-shadow: 5px 10px silver; 
+}
+
+h1{
+    margin: 5px auto;
+}
+
+#input-container{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#stockInput{
+    width: 92%;
+    height:2rem;
+}
+
+#stockFetch,#stockFetch{
+    height: 2rem;
+}
+.company-logo-result{
+    width: 40px;        
+    height: 40px;
+    border-radius: 40%;
+}
+
+.stock-name{
+    
+    font-size: 24px;
+}
+
+#companyWrapper{
+    border:2px solid black;
+    display: flex;
+    flex-flow: column nowrap;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    font-family: 'Baloo 2', cursive;
+    box-shadow: 10px 10px silver; 
+    border-radius: 10px;
+    width:60%; 
+    margin: 30px auto;     
+}
+
+#stock-item-wrapper{
+    background-color: white;
+    border: 1px solid rgba(112, 128, 144, 0.801);
+    border-radius: 10px;
+    color: slateblue;
+    padding: 20px 10px;  
+    margin: 10px 0; 
+    box-shadow: black;
+    font-size: 22px;
+    cursor:pointer; 
+}
+
+.profile-wrapper{
+    padding: 30px;
+}
+
+.company-logo{
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px auto;
+    width: 50px;        
+    height: 50px;        
+}
+
+.company-name{
+    font-size: 32px;
+    line-height: 60px;
+    padding:10px;
+    color: blue;
+}
+
+.company-price, #company-price-changes{
+    font-size: 32px;
+}
+
+.company-info{
+    font-size: 16px;
+}
+
+#myChart{
+    width:50%; 
+    margin:20px; 
+}
